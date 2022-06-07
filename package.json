@@ -1,0 +1,23 @@
+{
+  "name": "collect-map-clicks",
+  "version": "1.0.0",
+  "description": "Demo site that records coordinates of clicks on a map",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fullerenedream/collect-map-clicks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fullerenedream/collect-map-clicks/issues"
+  },
+  "homepage": "https://github.com/fullerenedream/collect-map-clicks#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
