@@ -1,13 +1,21 @@
-const path = require('path');
-const express = require('express');  
-const app = express();
+const express = require('express');
+// const bodyParser = require('body-parser');
+const app = express()
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
+app.use(express.json());
+// app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.urlencoded({extended: true}));
+// app.set('view engine', 'ejs')
 
-app.get('/', (req, res) => {
-    res.sendFile(`${__dirname}/public/index.html`);
-});
+app.get('/', function (req, res) {
+  res.render('index');
+})
 
-app.listen(3141, () => {  
-    console.log('Application listening on port 3141!');  
-});
+app.post('/', function (req, res) {
+  res.render('index');
+  })
+
+app.listen(3141, function () {
+  console.log('Demo app listening on port 3141!')
+})
